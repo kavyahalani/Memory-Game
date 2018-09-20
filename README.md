@@ -3,7 +3,7 @@ This project is a game under Udacity's front end Nanodegree.
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [How to Play](#How to Play)
+* [Rules](#Rules)
 * [Score](#Score)
 
 ## Instructions
