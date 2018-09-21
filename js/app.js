@@ -69,7 +69,7 @@ function play(){
 
 function reset(){
     moves=0;
-    opened=0;
+    opened=[];
     matched=0;
     min=0;
     sec=0;
