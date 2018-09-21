@@ -5,6 +5,7 @@ This project is a game under Udacity's front end Nanodegree.
 * [Instructions](#instructions)
 * [How to Play](#How to Play)
 * [Score](#Score)
+* [Dependencies](#Dependencies)
 
 ## Instructions
 
@@ -23,4 +24,11 @@ URL for Mobile:
 
 Star rating is given based on moves taken to complete the game.
 You will be shown the time taken and no of moves taken at the end of the game.
+
+## Dependencies
+
+I have used Bootstrap for styling purpose. i.e : Bootstrap CSS and Javascript
+Sweet Alert CSS and JS for for success pop-up box
+Google fonts for font styling
+font-awesome for symbols used in this project.
 

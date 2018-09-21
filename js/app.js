@@ -6,7 +6,7 @@ const iconArray= ["fa fa-diamond", "fa fa-paper-plane-o", "fa fa-anchor", "fa fa
 const deckOfCards = document.querySelector(".deck");
 init();
 let opened = [];
-let matched = 7,moves=0;
+let matched = 0,moves=0;
 let timer,min=0,sec=0;
 let stars=document.getElementsByClassName("fa fa-star");
 console.log(stars)
@@ -69,6 +69,7 @@ function play(){
 
 function reset(){
     moves=0;
+    opened=0;
     matched=0;
     min=0;
     sec=0;
