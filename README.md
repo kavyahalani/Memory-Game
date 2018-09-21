@@ -9,9 +9,8 @@ This project is a game under Udacity's front end Nanodegree.
 
 ## Instructions
 
-Step 1: Download this repository to your PC.
-Step 2: Open index.html file in any browser.
-URL for Mobile: 
+Step 1) Download this repository to your PC.
+Step 2) Open index.html file in any browser. 
 
 ## How to Play
 
