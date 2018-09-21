@@ -27,8 +27,8 @@ You will be shown the time taken and no of moves taken at the end of the game.
 
 ## Dependencies
 
-I have used Bootstrap for styling purpose. i.e : Bootstrap CSS and Javascript
-Sweet Alert CSS and JS for for success pop-up box
-Google fonts for font styling
-font-awesome for symbols used in this project.
+1) I have used Bootstrap for styling purpose. i.e : Bootstrap CSS and Javascript
+2) Sweet Alert CSS and JS for for success pop-up box
+3)Google fonts for font styling
+4) font-awesome for symbols used in this project.
 
