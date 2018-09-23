@@ -71,8 +71,8 @@ h1 {
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
       .deck .card{
-          height: 60px;
-          width: 60px;
+          height: 70px;
+          width: 70px;
           display: flex;
           padding-bottom: 5px;
           margin-bottom: 5px;
