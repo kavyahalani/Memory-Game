@@ -34,7 +34,12 @@ for(let i = 0; i < iconItems.length; i++) {
         const previous = opened[0];
 
         //if a card is opened already
-        if(opened.length === 1) {
+        if(opened.length===0){
+            current.classList.add("open", "show");
+            current.style.pointerEvents= "none";
+            opened.push(item);
+        }
+        else if(opened.length === 1) {
             item.classList.add("open", "show");
             opened.push(this);
             movesCount();
@@ -46,24 +51,26 @@ for(let i = 0; i < iconItems.length; i++) {
             }, 200);
         }
         //if no card is opened
-        else {
 
-            current.classList.add("open", "show");
-            current.style.pointerEvents= "none";
-            opened.push(item);
-        }
     });
 }
 }
 function gameOver() {
    
-    swal("Good job!", "Moves: "+moves+" Time: "+min+":"+sec+ " ", "success");
-    console.log("win")
-    reset()
+    swal("Good job!"+" Moves: "+moves+" Time: "+min+":"+sec+ " ","Click on play or reset button to play again", "success");
+    
+    console.log("win");
+    clearInterval(timer);
+    min=0;
+    sec=0;
+    time.innerHTML = min +" : "+sec;
+
+    
 }
 
 function play(){
     reset();
+    
     
 }
 
@@ -73,10 +80,10 @@ function reset(){
     matched=0;
     min=0;
     sec=0;
-    
+    opened=[];    
     clearInterval(timer);
     stars[2].style.color="black";
-    stars[1].display="block"
+    stars[1].style.color="black"
     document.getElementById("moves").innerHTML=0
     deckOfCards.innerHTML='';
     init();
@@ -113,7 +120,7 @@ function movesCount(){
         stars[2].style.color="white";
     }
     else if(moves>=15){
-        stars[1].style.display="none";
+        stars[1].style.color="White";
     }
     document.getElementById("moves").innerHTML= moves;}
 
