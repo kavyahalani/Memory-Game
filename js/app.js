@@ -57,15 +57,12 @@ for(let i = 0; i < iconItems.length; i++) {
 }
 function gameOver() {
    
-    swal("Good job!"+" Moves: "+moves+" Time: "+min+":"+sec+ " ","Click on play or reset button to play again", "success");
-    
     console.log("win");
     clearInterval(timer);
+    time.innerHTML = min +" : "+sec;
     min=0;
     sec=0;
-    time.innerHTML = min +" : "+sec;
-
-    
+    swal("Good job!"+" Moves: "+moves+" Time: "+min+":"+sec+ " ","Click on play or reset button to play again", "success");
 }
 
 function play(){
